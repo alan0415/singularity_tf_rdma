@@ -1,5 +1,5 @@
 Bootstrap:docker  
-From:bensonyang88/tensorflow-rdma:v4
+From: bensonyang88/tensorflow-rdma:v4
 
 MAINTAINER alan0415
 
