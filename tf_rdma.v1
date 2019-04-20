@@ -1,0 +1,9 @@
+Bootstrap:docker  
+From:bensonyang88/tensorflow-rdma:v4
+
+MAINTAINER alan0415
+
+%post  
+echo "This section happens once after bootstrap to build the image."  
+mkdir -p /code  
+apt-get install vim  
