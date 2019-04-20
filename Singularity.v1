@@ -3,5 +3,3 @@ From: bensonyang88/tensorflow-rdma:v4
 
 %post  
 echo "This section happens once after bootstrap to build the image."  
-apt-get update
-apt-get -y install nvidia-418
