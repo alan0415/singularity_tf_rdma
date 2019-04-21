@@ -2,7 +2,8 @@ Bootstrap:docker
 From: bensonyang88/tensorflow-rdma:v4
 
 %post  
-echo "This section happens once after bootstrap to build the image."  
-mkdir -p /code  
-apt-get update
-apt-get install nvidia-418
+echo "This section happens once after bootstrap to build the image." 
+cd /
+mkdir tf_test
+cd tf_test
+git clone https://github.com/tensorflow/models.git 
