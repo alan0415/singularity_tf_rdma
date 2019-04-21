@@ -1,0 +1,11 @@
+Bootstrap:docker  
+From: bensonyang88/tensorflow-rdma:v5
+
+%post  
+echo "This section happens once after bootstrap to build the image." 
+cd /
+mkdir tf_test
+cd tf_test
+git clone https://github.com/tensorflow/models.git
+cd models/tutorials/image
+python3 generate_cifar10_tfrecords.py --data-dir=/cifar-10-data 
