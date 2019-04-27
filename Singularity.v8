@@ -1,4 +1,4 @@
-Bootstrap:singularity  
+Bootstrap: shub
 From: alan0415/singularity_tf_rdma:v6
 
 %post  
