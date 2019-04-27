@@ -3,6 +3,4 @@ From: alan0415/singularity_tf_rdma:v6
 
 %post  
 echo "This section happens once after bootstrap to build the image."
-apt update
-apt install -y git
 cd / && git clone https://github.com/tensorflow/benchmarks.git
