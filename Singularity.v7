@@ -1,0 +1,7 @@
+Bootstrap:docker  
+From: bensonyang88/tensorflow-rdma:v6
+
+%post  
+echo "This section happens once after bootstrap to build the image."
+
+cd / && git clone https://github.com/tensorflow/benchmarks.git
